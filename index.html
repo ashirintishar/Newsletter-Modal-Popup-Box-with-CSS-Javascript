@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Newsletter Modal Popup Box with CSS & Javascript</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<a class="btn" onclick="popupToggle();">Subscribe Us</a>
+	<div id="popup">
+		<div class="content">
+			<img src="email.png">
+			<h2>Join Our Newsletter</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vel tempora sunt autem deserunt qui aliquid</p>
+
+			<div class="inputBox">
+				<input type="email" placeholder="Enter Email">
+			</div>
+
+			<div class="inputBox">
+				<input type="submit" value="Sign Up" class="btn">
+			</div>
+		</div>
+		<a class="close" onclick="popupToggle();"><img src="close.png"></a>
+	</div>
+
+	<script type="text/javascript">
+		function popupToggle(){
+			const popup = document.getElementById('popup');
+			popup.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
